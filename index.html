@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Culture Image Gallery</h1>
+        <p>Explore a stunning collection of beautiful pictures from around the world.</p>
+        <div class="gallery">
+            <div class="viewer">
+                <button class="prev" onclick="prevImage()">&#10094;</button>
+                <img id="largeImage" src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=600&h=400&fit=crop" alt="Car Image">
+                <button class="next" onclick="nextImage()">&#10095;</button>
+            </div>
+            <div class="thumbnails">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=100&h=100&fit=crop" 
+                     alt="Car 1" onclick="showImage(0)">
+                <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=100&h=100&fit=crop" 
+                     alt="Car 2" onclick="showImage(1)">
+                <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=100&h=100&fit=crop" 
+                     alt="Car 3" onclick="showImage(2)">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
